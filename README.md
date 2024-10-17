@@ -13,21 +13,21 @@ Implement ft_printf(), which replicates printf() functionality for specific form
 
 ### Allowed Format Specifiers:
 
-%c: Prints a single character.
+- %c: Prints a single character.
 
-%s: Prints a string.
+- %s: Prints a string.
 
-%p: Prints a pointer in hexadecimal format.
+- %p: Prints a pointer in hexadecimal format.
 
-%d / %i: Prints an integer in base 10.
+- %d / %i: Prints an integer in base 10.
 
-%u: Prints an unsigned decimal number.
+- %u: Prints an unsigned decimal number.
 
-%x: Prints a number in lowercase hexadecimal format.
+- %x: Prints a number in lowercase hexadecimal format.
 
-%X: Prints a number in uppercase hexadecimal format.
+- %X: Prints a number in uppercase hexadecimal format.
 
-%%: Prints a percent sign.
+- %%: Prints a percent sign.
 
 ### External Functions:
 
@@ -40,10 +40,6 @@ You need to ensure that any heap-allocated memory is properly freed and there ar
 ### Makefile:
 
 Your project must include a Makefile with the rules: NAME, all, clean, fclean, re. It should compile your library libftprintf.a using the ar command, without relinking unnecessarily.
-
-### Bonus:
-
-Additional features (if desired) should be in separate files with \_bonus extensions. You can use this for extended functionality that wasn't required in the mandatory part.
 
 ### Testing:
 
