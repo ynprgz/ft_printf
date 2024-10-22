@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:53:28 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/10/22 14:08:05 by yaperalt         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:35:26 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_aux_pointer(unsigned long long ptr)
 {
-	int	len;
+	unsigned long long int	len;
 
 	len = 0;
 	if (!ptr)

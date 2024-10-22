@@ -6,15 +6,15 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:53:25 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/10/22 14:08:47 by yaperalt         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:35:20 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_aux_hex(unsigned long long int n, char hexa)
+int	ft_aux_hex(unsigned long long n, char hexa)
 {
-	int	len;
+	unsigned long long	len;
 
 	len = 0;
 	if (n >= 16)
