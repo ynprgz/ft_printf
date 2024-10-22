@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_aux_string.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 18:35:33 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/10/22 14:01:17 by yaperalt         ###   ########.fr       */
+/*   Created: 2024/10/21 14:53:33 by yaperalt          #+#    #+#             */
+/*   Updated: 2024/10/21 15:02:53 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdlib.h>
-# include <unistd.h>
-# include <stdarg.h>
+int	ft_aux_string(char *c)
+{
+	int	len;
 
-// Function prototypes
-int		ft_printf(const char *format, ...);
-int		ft_putchar(char c);
-int		ft_aux_string(char *c);
-int		ft_aux_putnbr(int nb);
-int		ft_aux_unsigned(unsigned long int n);
-int		ft_aux_hex(unsigned long long int n, char hexa);
-int		ft_aux_pointer(unsigned long long ptr);
-
-#endif
+	len = 0;
+	if (!c)
+		c = "(null)";
+	while (c[len])
+		len++;
+	return (write(1, c, len));
+}
